@@ -11,7 +11,7 @@ class TodoList extends PolymerElement {
     return {
       items: {
         type: Array,
-        value: [{value: "Bananas", uid: 1, checked: false}, {value: "Milk", uid: 2, checked: false}, {value: "Chocolate", uid: 3 , checked: false}]
+        value: [{value: "Bananas", uid: 1, checked: false}, {value: "Milk", uid: 2, checked: false}]
       }
     }
   }

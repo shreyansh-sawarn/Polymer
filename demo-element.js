@@ -1,25 +1,32 @@
-/*
- * Directions: This is only for your reference please follow the exercises.
- * 
- **/
+import { LitElement, html, css } from 'lit';
 
-import {PolymerElement, html} from '@polymer/polymer/polymer-element.js'
+class DomElement extends LitElement {
+  static get styles() {
+    return css`
+      p {
+        color: #94a3b8;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+      a {
+        color: #818cf8;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+      a:hover {
+        color: #a5b4fc;
+        text-decoration: underline;
+      }
+    `;
+  }
 
-// Define the class for a new element called DomElement
-class DomElement extends PolymerElement {
-
-  // every class must have template function which will get rendered.
-  static get template () {
+  render() {
     return html`
       <p>I'm a DOM element. This is my shadow DOM!</p>
-
-      <!-- TODO: Try adding some other html elements inside the
-           template. For example, add <h1>A heading!</h1> or
-           <a href="stuff.html">A link!</a>
-      -->
+      <a href="https://lit.dev" target="_blank" rel="noopener">Learn Lit Element &rarr;</a>
     `;
   }
 }
 
-// Register the new element with the browser, otherwise it won't show.
 customElements.define('dom-element', DomElement);

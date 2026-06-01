@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
-    <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Components Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;850&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    
-    <!-- Main content goes here -->
-<simple-dom-element></simple-dom-element>
-<container-element></container-element>
-<todo-list></todo-list>
+    <div class="app-container">
+      <header>
+        <h1>Web Components Modernized</h1>
+        <p>A sleek showcase migrated from Polymer 3 to Lit 3</p>
+      </header>
 
+      <main class="showcase-grid">
+        <section class="glass-card">
+          <simple-dom-element></simple-dom-element>
+        </section>
 
-    <!-- add your element as a simple tag -->
-    <dom-element></dom-element>
+        <section class="glass-card">
+          <dom-element></dom-element>
+        </section>
 
+        <section class="glass-card">
+          <container-element></container-element>
+        </section>
+
+        <section class="glass-card">
+          <todo-list></todo-list>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

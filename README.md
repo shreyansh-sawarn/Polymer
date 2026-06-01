@@ -1,6 +1,6 @@
 # Modern Web Components Showcase (Lit & Vite)
 
-This repository contains a modernized frontend application showcase demonstrating Web Components built with **Lit 3.x** and compiled/served using **Vite**. 
+This repository contains a modernized frontend application showcase demonstrating Web Components built with **Lit 3.x** and compiled/served using **Vite**.
 
 Previously built with Polymer 3 (7 years ago), it has been completely updated to follow modern standards, lightweight reactive styling, and glassmorphic aesthetics.
 
